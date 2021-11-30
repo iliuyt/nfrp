@@ -1,8 +1,11 @@
 {
   "name": "nfrp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "nodejs 版frp工具",
-  "main": "index.js",
+  "main": "./bin/nfrp",
+  "bin": {
+    "nfrp": "./bin/nfrp"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

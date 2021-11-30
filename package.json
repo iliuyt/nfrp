@@ -1,12 +1,12 @@
 {
   "name": "nfrp",
   "version": "1.0.0",
-  "description": "",
+  "description": "nodejs 版frp工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "liuyt",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.2",

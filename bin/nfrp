@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+let server = require("../lib/server");
+let client = require("../lib/client");
+let program = require("commander");
+let pkg = require("../package.json");
+let chalk = require("chalk");
+
+program
+    .version(pkg.version)
+    .usage("<command> [options]");
+
+// Set help info
+program.on("--help", function () {
+    console.log(chalk.gray("启动服务端"));
+    console.log(chalk.green("nfrp server 10001"));
+    console.log(chalk.gray("启动客户端"));
+    console.log(chalk.green("nfrp client 127.0.0.1 10001 3000"));
+});
+
+program.command("server <port>").alias("s").description("启动服务端").action(server);
+
+program.command("client <port> <ip> <local_port>").alias("c").description("启动客户端").action(client);
+
+// Display help if wrong cmd
+program.action(function () {
+    program.help();
+});
+
+program.parse(process.argv);

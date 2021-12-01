@@ -15,7 +15,7 @@ program.on("--help", function () {
     console.log(chalk.gray("启动服务端"));
     console.log(chalk.green("nfrp server 10001"));
     console.log(chalk.gray("启动客户端"));
-    console.log(chalk.green("nfrp client 127.0.0.1 10001 3000"));
+    console.log(chalk.green("nfrp client 10001 127.0.0.1 3000"));
 });
 
 program.command("server <port>").alias("s").description("启动服务端").action(server);

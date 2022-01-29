@@ -27,3 +27,4 @@ npm-debug.log
 coverage/
 coverage.lcov
 .nyc_output
+demo

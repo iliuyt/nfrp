@@ -1,6 +1,6 @@
 {
   "name": "nfrp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "nodejs 版frp工具",
   "main": "./bin/nfrp",
   "bin": {
